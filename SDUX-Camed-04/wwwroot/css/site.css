@@ -18,5 +18,31 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
 }
+
+.navbar {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+
+    .navbar-brand:hover, .nav-link:hover {
+        color: #cce7ff !important;
+    }
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+    footer a {
+        color: #cce7ff;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
