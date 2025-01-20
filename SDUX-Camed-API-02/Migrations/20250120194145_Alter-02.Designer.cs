@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SDUX_Camed_API_02.Data;
 
@@ -10,9 +11,11 @@ using SDUX_Camed_API_02.Data;
 namespace SDUX_Camed_API_02.Migrations
 {
     [DbContext(typeof(CamedDbContext))]
-    partial class CamedDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250120194145_Alter-02")]
+    partial class Alter02
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
