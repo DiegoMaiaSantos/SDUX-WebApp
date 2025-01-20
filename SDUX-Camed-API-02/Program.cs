@@ -1,4 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using SDUX_Camed_API_02.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Add connections to the dbo
+builder.Services.AddDbContext<CamedDbContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CamedConnection")));
 
 // Add services to the container.
 
