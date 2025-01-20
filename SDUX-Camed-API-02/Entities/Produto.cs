@@ -18,7 +18,7 @@ namespace SDUX_Camed_API_02.Entities
         [Range(0, 100, ErrorMessage = "A Quantidade deve estar entre 0 e 100")]
         public int Quantidade { get; set; }
 
-        public int ClienteId { get; set; }
-        public Cliente? Cliente { get; set; }
+        //public int? ClienteId { get; set; }
+        //public Cliente? Cliente { get; set; }
     }
 }
